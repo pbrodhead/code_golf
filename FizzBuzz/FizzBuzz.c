@@ -1,6 +1,7 @@
+i;
 int main(){
-	//char s[80];
-	for(int i=1;i<101;i++){
+	char s[80];
+	for(;++i<101;){
 		s[0] = '\0';
 		if(!(i%3)) strcat(s,"Fizz");
 		if(!(i%5)) strcat(s,"Buzz");
