@@ -1,12 +1,9 @@
 i;
-int main(){
-	char s[80];
+main(){
 	for(;++i<101;){
-		s[0] = '\0';
-		if(!(i%3)) strcat(s,"Fizz");
-		if(!(i%5)) strcat(s,"Buzz");
-		if((i%3) && (i%5)) sprintf(s, "%d", i);
-		strcat(s,"\n");
-		printf(s);
+		if(!(i%3)) printf("Fizz");
+		if(!(i%5)) printf("Buzz");
+		if((i%3) && (i%5)) printf("%d", i);
+		printf("\n");
 	}
 }
